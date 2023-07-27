@@ -1,4 +1,5 @@
-package com.ipartek.formacion.amazonia.modelos;
+package com.ipartek.formacion.amazonia.controladores;
+
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -7,6 +8,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+
+import com.ipartek.formacion.amazonia.modelos.Articulo;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -18,7 +21,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	private static final String URL = "jdbc:sqlite:C:\\Users\\java\\git\\java-2556\\amazonia\\sql\\amazonia.db";
+	private static final String URL = "jdbc:sqlite:C:\\Users\\Java\\git\\amazon\\amazon\\sql\\amazonia.db";
 
 	private static final String SQL_SELECT = "SELECT * FROM articulos";
 

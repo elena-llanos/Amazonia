@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="https://jakarta.ee/xml/ns/jakartaee"
-	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
-	version="6.0">
-	<welcome-file-list>
-		<welcome-file>index</welcome-file>
-	</welcome-file-list>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <welcome-file-list>
+    <welcome-file>index</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>CestaServlet</display-name>
+    <servlet-name>CestaServlet</servlet-name>
+    <servlet-class>com.ipartek.formacion.amazonia.controladores.CestaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CestaServlet</servlet-name>
+    <url-pattern>/CestaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DetalleServlet</display-name>
+    <servlet-name>DetalleServlet</servlet-name>
+    <servlet-class>com.ipartek.formacion.amazonia.controladores.DetalleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DetalleServlet</servlet-name>
+    <url-pattern>/DetalleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EliminarServlet</display-name>
+    <servlet-name>EliminarServlet</servlet-name>
+    <servlet-class>com.ipartek.formacion.amazonia.controladores.EliminarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EliminarServlet</servlet-name>
+    <url-pattern>/EliminarServlet</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>com.ipartek.formacion.amazonia.listeners.SesionListener</listener-class>
+  </listener>
 </web-app>
