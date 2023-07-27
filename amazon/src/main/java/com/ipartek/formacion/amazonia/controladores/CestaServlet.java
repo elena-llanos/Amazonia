@@ -20,7 +20,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class CestaServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	private static final String URL = "jdbc:sqlite:C:\\Users\\java\\git\\java-2556\\amazonia\\sql\\amazonia.db";
+	private static final String URL = "jdbc:sqlite:C:\\Users\\Java\\git\\amazon\\amazon\\sql\\amazonia.db";
 
 	private static final String SQL_SELECT_ID = "SELECT * FROM articulos WHERE id = ?";
 
